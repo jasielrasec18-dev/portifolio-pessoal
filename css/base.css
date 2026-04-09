@@ -1,0 +1,13 @@
+body {
+    font-family: var(--font-principal);
+    color: #333333;
+    background-color: black;
+}
+
+ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    color: #3333;
+}
