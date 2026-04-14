@@ -57,10 +57,12 @@ Estilos para a seção de apresentação (hero) personalizada
   box-shadow: 0 0 10px #ff2efc44;
   transition: background 0.2s, color 0.2s;
   margin-bottom: 2rem;
+  text-decoration: none;
 }
 .hero-section .hero-btn:hover {
   background: #ff2efc;
   color: #18181b;
+  text-decoration: underline;
 }
 .hero-section .hero-socials {
   display: flex;
