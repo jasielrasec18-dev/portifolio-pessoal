@@ -1,0 +1,61 @@
+.site-header {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%);
+	width: calc(100% - 10px);
+	border-radius: 15px;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 276px;
+	background-color: black;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    color: #3333;
+}
+
+.site-nav a {
+	font-size: 1.25rem;
+	color: #333333;
+	text-decoration: none;
+}
+
+.site-nav a:hover {
+    color: #555555;
+	text-decoration: underline;
+}
+
+/* Nav */
+
+/* Layout automático */
+/*display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 276px;
+gap: 10px;
+
+position: absolute;
+width: 1920px;
+height: 64px;
+left: calc(50% - 1920px/2);
+top: 0px;
+
+
+/* Auto layout por dentro */
+/*flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;

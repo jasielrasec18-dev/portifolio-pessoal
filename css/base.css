@@ -4,10 +4,8 @@ body {
     background-color: black;
 }
 
-ul, li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 10px;
-    color: #3333;
+site-header {
+    background-color: black;
+    max-width: 1360px;
+    margin: 0 auto;
 }
