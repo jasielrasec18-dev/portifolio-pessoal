@@ -6,8 +6,8 @@ Estilos para a seção de apresentação (hero) personalizada
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  background: #18181b;
+  min-height: 115vh;
+  background: black;
   color: #fff;
   text-align: center;
   padding: 3rem 1rem 2rem 1rem;
@@ -75,4 +75,21 @@ Estilos para a seção de apresentação (hero) personalizada
 }
 .hero-section .hero-socials a:hover {
   color: #ff2efc;
+}
+
+.hero-section .hero-socials a img {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+  background: #fff; /* Fundo branco para destacar */
+  border-radius: 50%;
+  padding: 0.3rem;
+  box-shadow: 0 0 8px #ff2efc44;
+  transition: filter 0.2s, transform 0.2s, background 0.2s;
+}
+
+.hero-section .hero-socials a:hover img {
+  background: #ff2efc; /* Fundo neon no hover */
+  filter: drop-shadow(0 0 8px #ff2efc) brightness(1.2);
+  transform: scale(1.12) rotate(-6deg);
 }

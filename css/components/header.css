@@ -1,6 +1,6 @@
 .site-header {
-	position: fixed;
-	top: 10px;
+	position: absolute;
+	top: 0px;
 	left: 50%;
 	transform: translate(-50%);
 	width: calc(100% - 10px);
