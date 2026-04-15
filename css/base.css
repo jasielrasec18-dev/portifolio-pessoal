@@ -9,3 +9,16 @@ site-header {
     max-width: 1360px;
     margin: 0 auto;
 }
+
+main{
+    padding: 2.5rem 0 2.5rem;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1090px) {
+	main {
+		padding: 0.65rem;
+	}
+}
