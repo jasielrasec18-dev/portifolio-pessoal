@@ -1,0 +1,266 @@
+/*
+Estilos para a seção de apresentação pessoal
+*/
+
+.presentation-section {
+  background: radial-gradient(circle at top, rgba(255, 46, 252, 0.08), transparent 30%), linear-gradient(180deg, #040406 0%, #0b0b11 100%);
+  color: #fff;
+  padding: 5.5rem 1rem 6rem;
+}
+
+.presentation-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.presentation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.presentation-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Orbitron', 'Montserrat', 'Arial', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.presentation-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1rem;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #00ffea, #ff2efc);
+}
+
+.presentation-title, .highlight-mim {
+  color: #F2F2F2;
+  text-shadow: 0 0 12px #F2F2F2;
+}
+
+.presentation-title .bracket {
+  color: #CC66FF;
+  text-shadow: 0 0 8px #CC66FF;
+}
+
+.presentation-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Seção de imagem */
+.presentation-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-circle {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(204, 102, 255, 0.35);
+  box-shadow: 0 0 80px rgba(204, 102, 255, 0.45), 0 0 120px rgba(204, 102, 255, 0.3), inset 0 0 40px rgba(204, 102, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #101017 30%, #040405 100%);
+  flex-shrink: 0;
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Seção de texto */
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.presentation-text p {
+  margin: 0;
+}
+
+.intro-text,
+.main-text,
+.outro-text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #d4d4d8;
+}
+
+.intro-text strong,
+.main-text strong,
+.outro-text strong {
+  color: #ff2efc;
+  font-weight: 700;
+}
+
+/* Seção de tecnologias */
+.technologies-section {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.tech-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #888;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0.8rem;
+  border: 1.5px solid rgba(204, 102, 255, 0.25);
+  border-radius: 16px;
+  background: rgba(20, 20, 28, 0.9);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+.tech-item:hover {
+  border-color: #cc66ff;
+  background: rgba(20, 20, 28, 1);
+  box-shadow: 0 0 24px rgba(204, 102, 255, 0.35);
+  transform: translateY(-6px);
+}
+
+.tech-item img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 6px rgba(204, 102, 255, 0.3));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.tech-item:hover img {
+  filter: drop-shadow(0 0 12px #cc66ff);
+  transform: scale(1.1);
+}
+
+.tech-item span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .presentation-section {
+    padding: 4rem 1rem;
+  }
+
+  .presentation-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .presentation-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .image-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .tech-item {
+    padding: 1rem;
+  }
+
+  .tech-item img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-item span {
+    font-size: 0.85rem;
+  }
+
+  .intro-text,
+  .main-text,
+  .outro-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation-section {
+    padding: 3rem 0.5rem;
+  }
+
+  .presentation-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .image-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .tech-item {
+    padding: 0.8rem;
+  }
+
+  .tech-item img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .presentation-text {
+    gap: 0.8rem;
+  }
+
+  .intro-text,
+  .main-text,
+  .outro-text {
+    font-size: 0.9rem;
+  }
+}

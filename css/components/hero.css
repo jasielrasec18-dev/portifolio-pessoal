@@ -20,16 +20,16 @@ Estilos para a seção de apresentação (hero) personalizada
 }
 .hero-section .hero-title {
   font-family: 'Orbitron', 'Montserrat', 'Arial', sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
   margin-bottom: 0.5rem;
   color: #fff;
-  text-shadow: 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #f0f;
+  text-shadow: 0 0 20px #ff2efc, 0 0 40px #ff2efc, 0 0 60px #cc66ff, 0 0 80px #cc66ff;
 }
 .hero-section .hero-title .neon {
-  color: #ff2efc;
-  text-shadow: 0 0 10px #ff2efc, 0 0 20px #ff2efc, 0 0 40px #ff2efc;
+  color: #cc66ff;
+  text-shadow: 0 0 20px #cc66ff, 0 0 40px #cc66ff, 0 0 60px #cc66ff;
 }
 .hero-section .hero-role {
   font-size: 1.3rem;
@@ -97,6 +97,13 @@ Estilos para a seção de apresentação (hero) personalizada
   transform: scale(1.12) rotate(-6deg);
 }
 
+.hero-mouse {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
 
 @media (max-width: 768px) {
   .hero-section {
