@@ -5,8 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Jasiel Rasec, desenvolvedor Full Stack especializado em React." />
-    <meta name="author" content="Jasiel Rasec" />
-    <meta name="keywords" content="desenvolvedor, fullstack, react, node.js, typescript, portfólio, programador" />
+	<meta name="author" content="Jasiel Rasec" />
+	<meta name="keywords" content="desenvolvedor, fullstack, react, node.js, typescript, portfólio, programador" />
 
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="./css/components/hero.css" />
 	<link rel="stylesheet" href="./css/components/presentation.css" />
 	<link rel="stylesheet" href="./css/components/projects.css" />
-	<link rel="stylesheet" href="./css/components/contact.css" />
+	<link rel="stylesheet" href="./css/components/contacts.css" />
+	<link rel="stylesheet" href="./css/components/footer.css" />
 
 	<title>Portfólio Jasiel Rasec - Desenvolvedor Full Stack</title>
 </head>
@@ -83,8 +84,9 @@
 		<section class="presentation-section" id="Sobre">
 			<div class="presentation-container">
 				<div class="presentation-content">
-					<h2 class="presentation-title"><span class="bracket">&lt;</span>Sobre <span class="highlight-mim">Mim</span><span class="bracket">/&gt;</span></h2>
-					
+					<h2 class="presentation-title"><span class="bracket">&lt;</span>Sobre <span
+							class="highlight-mim">Mim</span><span class="bracket">/&gt;</span></h2>
+
 					<div class="presentation-main">
 						<div class="presentation-image">
 							<div class="image-circle">
@@ -94,15 +96,19 @@
 
 						<div class="presentation-text">
 							<p class="intro-text">
-								Com mais de <strong>1 ano</strong> de experiência em desenvolvimento web e mobile, sou apaixonado por criar soluções tecnológicas que fazem a diferença.
+								Com mais de <strong>1 ano</strong> de experiência em desenvolvimento web e mobile, sou
+								apaixonado por criar soluções tecnológicas que fazem a diferença.
 							</p>
-							
+
 							<p class="main-text">
-								Especializado em <strong>React, Node.js</strong> e tecnologias modernas, transformo conceitos complexos em interfaces intuitivas e performáticas.
+								Especializado em <strong class="highlight-react">React</strong>, <strong
+									class="highlight-node">Node.js</strong> e tecnologias modernas, transformo conceitos
+								complexos em interfaces intuitivas e performáticas.
 							</p>
-							
+
 							<p class="outro-text">
-								Sempre em busca de novos desafios e oportunidades para expandir meu conhecimento no universo tech.
+								Sempre em busca de novos desafios e oportunidades para expandir meu conhecimento no
+								universo tech.
 							</p>
 
 							<div class="technologies-section">
@@ -139,9 +145,122 @@
 				</div>
 			</div>
 		</section>
-	</main>
 
-	<footer>
+		<section class="projects-section" id="Projetos">
+			<div class="projects-container">
+				<h2 class="projects-title"><span class="bracket">&lt;</span>Meus <span
+						class="highlight-mim">Projetos</span><span class="bracket">/&gt;</span></h2>
+				<div class="projects-grid">
+					<!-- Projeto 1 -->
+					<div class="project-card">
+						<img src="./images/projects/project1.png" alt="Projeto 1" class="project-image" />
+						<div class="project-content">
+							<h3 class="project-name">E-Commerce Platform</h3>
+							<p class="project-description">Plataforma completa de e-commerce com carrinho, pagamentos e
+								painel admin. Design moderno e responsivo.</p>
+							<div class="project-tags">
+								<span class="project-tag">React</span>
+								<span class="project-tag">Node.js</span>
+								<span class="project-tag">PostgreSQL</span>
+								<span class="project-tag">Stripe</span>
+							</div>
+						</div>
+					</div> <!-- Projeto 2 -->
+					<div class="project-card">
+						<img src="./images/projects/project2.png" alt="Projeto 2" class="project-image" />
+						<div class="project-content">
+							<h3 class="project-name">Task Manager Pro</h3>
+							<p class="project-description">Aplicativo de gerenciamento de tarefas com colaboração em
+								tempo real e integração com calendário.</p>
+							<div class="project-tags">
+								<span class="project-tag">Next.js</span>
+								<span class="project-tag">TypeScript</span>
+								<span class="project-tag">Prisma</span>
+								<span class="project-tag">WebSocket</span>
+							</div>
+						</div>
+					</div> <!-- Projeto 3 -->
+					<div class="project-card">
+						<img src="./images/projects/project3.png" alt="Projeto 3" class="project-image" />
+						<div class="project-content">
+							<h3 class="project-name">Crypto Dashboard</h3>
+							<p class="project-description">Dashboard para acompanhamento de criptomoedas com gráficos em
+								tempo real e alertas personalizados.</p>
+							<div class="project-tags">
+								<span class="project-tag">React</span>
+								<span class="project-tag">D3.js</span>
+								<span class="project-tag">API REST</span>
+								<span class="project-tag">Redis</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<img src="./images/projects/project4.png" alt="Projeto 4" class="project-image" />
+						<div class="project-content">
+							<h3 class="project-name">Social Media App</h3>
+							<p class="project-description">Rede social com feed, stories, mensagens diretas e sistema de
+								notificações push.</p>
+							<div class="project-tags">
+								<span class="project-tag">React Native</span>
+								<span class="project-tag">Firebase</span>
+								<span class="project-tag">Redux</span>
+								<span class="project-tag">Socket.io</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Adicione mais projetos conforme necessário -->
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section" id="Contato">
+			<div class="contact-container">
+				<h2 class="contact-title"><span class="bracket">&lt;</span>Contato<span class="bracket">/&gt;</span></h2>
+				<p class="contact-description">Vamos construir algo incrível juntos? Entre em contato através das minhas redes sociais.</p>
+				<div class="contact-methods">
+					<a class="contact-card" href="https://github.com/jasielrasec18-dev" target="_blank" rel="noopener noreferrer">
+						<div class="contact-icon"><img src="./images/icons/github.svg" alt="GitHub" /></div>
+						<div class="contact-info">
+							<strong>GitHub</strong>
+							<span>@cyberdev</span>
+						</div>
+					</a>
+					<a class="contact-card" href="https://www.linkedin.com/in/cyberdev" target="_blank" rel="noopener noreferrer">
+						<div class="contact-icon"><img src="./images/icons/linkedin.svg" alt="LinkedIn" /></div>
+						<div class="contact-info">
+							<strong>LinkedIn</strong>
+							<span>/in/cyberdev</span>
+						</div>
+					</a>
+					<a class="contact-card" href="https://twitter.com/cyberdev" target="_blank" rel="noopener noreferrer">
+						<div class="contact-icon"><img src="./images/icons/twitter.svg" alt="Twitter" /></div>
+						<div class="contact-info">
+							<strong>Twitter/X</strong>
+							<span>@cyberdev</span>
+						</div>
+					</a>
+					<a class="contact-card" href="mailto:jasielrasec18@gmail.com" target="_blank" rel="noopener noreferrer">
+						<div class="contact-icon"><img src="./images/icons/email.svg" alt="Email" /></div>
+						<div class="contact-info">
+							<strong>Email</strong>
+							<span>jasielrasec18@gmail.com</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="site-footer">
+		<div class="footer-container">
+			<div class="footer-separator"></div>
+			<div class="footer-content">
+				<p>Desenvolvido com <span class="footer-heart">♥</span> e muito <span class="footer-code">código</span></p>
+				<p>© 2024 Jasiel Rasec. Todos os direitos reservados.</p>
+			</div>
+		</div>
 	</footer>
 
 </body>

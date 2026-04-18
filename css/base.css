@@ -16,6 +16,11 @@ main{
     margin: 0 auto;
 }
 
+.highlight-mim {
+  color: #F2F2F2;
+  text-shadow: 0 0 12px #F2F2F2;
+}
+
 
 @media (max-width: 1090px) {
 	main {

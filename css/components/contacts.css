@@ -1,0 +1,114 @@
+.contact-section {
+  background: black;
+  color: #fff;
+  padding: 5.5rem 1rem 6rem;
+}
+
+.contact-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #f2f2f2;
+  text-shadow: 0 0 12px #F2F2F2;
+  font-family: 'Orbitron', 'Montserrat', 'Arial', sans-serif;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1rem;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #00ffea, #ff2efc);
+}
+
+.contact-title .bracket {
+  color: #CC66FF;
+  text-shadow: 0 0 8px #CC66FF;
+}
+
+.contact-description {
+  max-width: 720px;
+  text-align: center;
+  color: #c7c7d1;
+  line-height: 1.8;
+  font-size: 0.98rem;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid rgba(204, 102, 255, 0.25);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(204, 102, 255, 0.55);
+  box-shadow: 0 18px 40px rgba(204, 102, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-icon {
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #fff;
+}
+
+.contact-info strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.contact-info span {
+  font-size: 0.85rem;
+  color: #b3b3b8;
+}
+
+@media (max-width: 900px) {
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}

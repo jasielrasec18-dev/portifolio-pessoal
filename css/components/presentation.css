@@ -3,13 +3,13 @@ Estilos para a seção de apresentação pessoal
 */
 
 .presentation-section {
-  background: radial-gradient(circle at top, rgba(255, 46, 252, 0.08), transparent 30%), linear-gradient(180deg, #040406 0%, #0b0b11 100%);
+  background: black;
   color: #fff;
   padding: 5.5rem 1rem 6rem;
 }
 
 .presentation-container {
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@ Estilos para a seção de apresentação pessoal
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   max-width: 1100px;
 }
@@ -65,7 +65,7 @@ Estilos para a seção de apresentação pessoal
 .presentation-image {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .image-circle {
@@ -94,7 +94,8 @@ Estilos para a seção de apresentação pessoal
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 0;
+  justify-content: center;
 }
 
 .presentation-text p {
@@ -116,6 +117,14 @@ Estilos para a seção de apresentação pessoal
   font-weight: 700;
 }
 
+.highlight-react {
+  color: #00ffea;
+}
+
+.highlight-node {
+  color: #ff2efc;
+}
+
 /* Seção de tecnologias */
 .technologies-section {
   margin-top: 2.5rem;
@@ -135,6 +144,7 @@ Estilos para a seção de apresentação pessoal
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1.2rem;
+  justify-items: center;
 }
 
 .tech-item {
@@ -149,6 +159,11 @@ Estilos para a seção de apresentação pessoal
   backdrop-filter: blur(12px);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
   cursor: default;
+
+  height: 170px;
+  width: 100%;
+  max-width: 190px;
+  text-align: center;
 }
 
 .tech-item:hover {
