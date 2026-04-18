@@ -193,7 +193,6 @@ Estilos para a seção de apresentação pessoal
   text-align: center;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .presentation-section {
     padding: 4rem 1rem;

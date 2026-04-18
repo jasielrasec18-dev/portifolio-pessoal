@@ -112,3 +112,45 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 3rem 0.75rem 4rem;
+  }
+
+  .contact-card {
+    padding: 1rem 1.1rem;
+  }
+
+  .contact-icon {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+
+  .contact-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .contact-info strong {
+    font-size: 0.9rem;
+  }
+
+  .contact-info span {
+    font-size: 0.8rem;
+  }
+}
