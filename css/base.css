@@ -4,7 +4,7 @@ body {
     background-color: black;
 }
 
-site-header {
+.site-header {
     background-color: black;
     max-width: 1360px;
     margin: 0 auto;
