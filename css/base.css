@@ -1,29 +1,33 @@
-body {
-    font-family: var(--font-principal);
-    color: #333333;
-    background-color: black;
-}
+ html {
+     scroll-behavior: smooth;
+ }
 
-.site-header {
-    background-color: black;
-    max-width: 1360px;
-    margin: 0 auto;
-}
+ body {
+     font-family: var(--font-principal);
+     color: #333333;
+     background-color: black;
+ }
 
-main{
-    padding: 2.5rem 0 2.5rem;
-    max-width: 1360px;
-    margin: 0 auto;
-}
+ .site-header {
+     background-color: black;
+     max-width: 1360px;
+     margin: 0 auto;
+ }
 
-.highlight-mim {
-  color: #F2F2F2;
-  text-shadow: 0 0 12px #F2F2F2;
-}
+ main {
+     padding: 2.5rem 0 2.5rem;
+     max-width: 1360px;
+     margin: 0 auto;
+ }
+
+ .highlight-mim {
+     color: #F2F2F2;
+     text-shadow: 0 0 12px #F2F2F2;
+ }
 
 
-@media (max-width: 1090px) {
-	main {
-		padding: 0.65rem;
-	}
-}
+ @media (max-width: 1090px) {
+     main {
+         padding: 0.65rem;
+     }
+ }
