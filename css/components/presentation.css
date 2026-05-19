@@ -69,8 +69,8 @@ Estilos para a seção de apresentação pessoal
 }
 
 .image-circle {
-  width: 380px;
-  height: 380px;
+  width: 580px;
+  height: 580px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid rgba(204, 102, 255, 0.35);
