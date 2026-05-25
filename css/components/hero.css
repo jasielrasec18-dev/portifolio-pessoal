@@ -6,17 +6,17 @@ Estilos para a seção de apresentação (hero) personalizada
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 110vh;
+  min-height: 125vh;
   background: black;
   color: #fff;
   text-align: center;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 5rem 2rem 0rem 0rem;
 }
 
 .hero-section .hero-intro {
   color: #00ffea;
   letter-spacing: 0.2em;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -116,6 +116,15 @@ Estilos para a seção de apresentação (hero) personalizada
   width: fit-content;
   transform: translateX(-50%);
   animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 @media (max-width: 768px) {
