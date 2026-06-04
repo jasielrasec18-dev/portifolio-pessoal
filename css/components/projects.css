@@ -110,11 +110,17 @@
 }
 
 .project-buttons {
-  display: flex;
+  display: inline-flex;
   gap: 16px;
 }
 
-.project-buttons a {
+.github-buttons {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.project-buttons a,
+.github-buttons a {
   padding: 12px 22px;
   border-radius: 999px;
   text-decoration: none;
@@ -124,10 +130,12 @@
   color: white;
 }
 
-.project-buttons a:hover {
+.project-buttons a:hover,
+.github-buttons a:hover {
   opacity: 0.85;
   transform: translateY(-2px);
 }
+
 
 .secondary-btn {
   background: transparent !important;
@@ -165,30 +173,22 @@
 
 .project-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1.75rem 1.75rem 1.5rem;
 }
 
-.project-name {
-  font-size: 1.4rem;
-  margin: 0;
-  color: #f5f5ff;
-  line-height: 1.2;
-}
-
-.project-description {
-  margin: 0;
-  color: #c7c7d1;
-  line-height: 1.8;
-  min-height: 4.5rem;
-}
-
+.project-name,
+.project-description,
 .project-tags {
+  flex-basis: 100%;
+}
+
+.project-buttons,
+.github-buttons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: auto;
+  gap: 16px;
 }
 
 .project-tag {
@@ -245,5 +245,17 @@
 
   .project-description {
     min-height: auto;
+  }
+
+  .project-buttons,
+  .github-buttons {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+  .project-buttons a,
+  .github-buttons a {
+    width: 100%;
+    text-align: center;
   }
 }
